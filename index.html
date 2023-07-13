@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    
+    <style>
+        body {
+            background-color: rgb(10, 117, 124);
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+       
+        form {
+            background-color: rgb(20, 148, 73);
+            border-radius: 10px;
+            
+            width: 400px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        input[type="date"] {
+            width: 90%;
+         padding: 10px;
+            margin-bottom: 10px;
+        border: 2px solid rgb(45, 151, 98);
+            border-radius: 1px;
+            font-size: 14px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 2px;
+        }
+        
+        label {
+            font-size: 14px;
+        }
+        
+        input[type="submit"] {
+            background-color: rgb(30, 85, 30);
+            color: white;
+          padding: 10px 20px;
+            
+            border-radius: 2px;
+        cursor: pointer;
+            font-size: 14px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color:rgb(141, 22, 22);
+            border-radius: 13px;
+        }
+        
+        legend {
+            color: rgb(8, 8, 59);
+            border-color: rgb(94, 42, 163);
+          font-weight: bold;
+      margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(31, 150, 50);
+        }
+        
+        h1 {
+            color: rgb(18, 11, 110);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+      h2  {
+        color: rgb(58, 26, 95);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+  
+</head>
+<body>
+    
+    <form action="welcome.html">
+        <h1 style="color: rgb(30, 46, 99);">Flipkart</h1>
+        <h1 style="color: rgb(39, 13, 131);">  Sign Up</h1>
+       <center> <input type="text" name="fname" placeholder="Enter Your First Name:-" required minlength="5"></center>
+        <br>
+        <center><input type="text" name="lname" placeholder="Enter Your Last Name:-" required></center>    <br>
+        <center><input type="email" name="email" placeholder="Enter Your Email" required></center>
+        <br>
+        <center><input type="number" name="contact" placeholder="Enter Mobile Number:-" required step="5"></center>
+        <br>
+       <center> <input type="date" placeholder="Date of Birth"></center>
+        <br>
+        <legend>Gender</legend>
+       <center> <select name="gender" id="gender">
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select></center>
+        <br>
+        <input type="checkbox" name="smsNotification" id="smsnote">
+        <label for="smsnote">Receive SMS Notifications</label>
+        <br>
+        <input type="checkbox" name="WhatsappNotification" id="Whatsappnote">
+        <label for="Whatsappnote">Receive Whatsapp Notifications</label><br>
+        <input type="checkbox" name="mailNotification" id="mailnote">
+        <label for="mailnote">Receive Email Notifications</label>
+        <br><br>
+        <center><input type="submit" value="Create Account" style="border-radius: 13px;" ></center>
+    </form>
+</body>
+</html>
